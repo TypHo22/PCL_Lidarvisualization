@@ -40,7 +40,6 @@ void VisualizationHandler::initVisualizationHandler(IVisualizationHandler::visuM
 
 void VisualizationHandler::initCloudViewer(std::string name)
 {
-  std::cout<<"VisualizationHandler::initCloudViewer"<<std::endl;
   cloudViewer_ = std::move(std::unique_ptr<pcl::visualization::CloudViewer>(new pcl::visualization::CloudViewer(name)));
 }
 void VisualizationHandler::renderCloud(pcl::PointCloud<pcl::PointXYZ>::Ptr& pclData)
@@ -55,7 +54,6 @@ void VisualizationHandler::renderPCLIntensity(pcl::PointCloud<pcl::PointXYZI>::P
 
 void VisualizationHandler::initPCLViewer(std::string name)
 {
-    std::cout<<"initPCLViewer"<<std::endl;
     pclViewer_ = std::move(std::unique_ptr<pcl::visualization::PCLVisualizer>(new pcl::visualization::PCLVisualizer(name)));
     pclViewer_->setBackgroundColor (0, 0, 0);
     pclViewer_->addCoordinateSystem (1.0);
@@ -76,7 +74,6 @@ void VisualizationHandler::renderPCL(pcl::PointCloud<pcl::PointXYZ>::Ptr &pclDat
 
 void VisualizationHandler::renderPCLRGBA(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr &pclData)
 {
-    std::cout<<"renderPCLrgba"<<std::endl;
     pclViewer_->removeAllPointClouds();
     pclViewer_->addPointCloud(pclData,"cloud");
     pclViewer_->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 4, "cloud");
