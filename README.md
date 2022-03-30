@@ -54,6 +54,6 @@ With PCLVISUALIZER:
 ![Screenshot from 2022-03-30 22-31-45](https://user-images.githubusercontent.com/42981587/160927186-8c0ef823-d986-4934-8df6-5cde0373cb02.png)
 With RANGE points which are nearer than others become more redish
 ![Screenshot from 2022-03-30 22-39-15](https://user-images.githubusercontent.com/42981587/160927194-14b9d2d7-512e-42c0-bd6a-1913d68efef5.png)
-With no visualization in main.cpp set visuMode_ to visualization::IVisualizationHandler::visuMode::NONE to only see pure sensor information
+With no visualization in main.cpp set visuMode_ to visualization::IVisualizationHandler::visuMode::NONE
 ![Screenshot from 2022-03-30 22-41-29](https://user-images.githubusercontent.com/42981587/160927199-7346c0f7-7d2d-4372-8e8d-af369ed58403.png)
 
