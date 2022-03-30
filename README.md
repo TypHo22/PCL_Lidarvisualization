@@ -1,2 +1,12 @@
-# PCL_Lidarvisualization
- Example how to visualize the sensor data of YLidars-Lidarsensors and visualize it with the PCL-Library
+# Lidar_Visualization
+Project for visualization of lidar data from Ylidar 
+
+**Install:**  
+pcl lib 
+> sudo apt install libpcl-dev 
+
+
+YLidar sdk   
+> https://github.com/YDLIDAR/YDLidar-SDK
+
+
