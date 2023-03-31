@@ -13,37 +13,33 @@ The pcl lib is mandatory does not matter if you build YDLidar from source or use
 Build YDLidar from source
 Get YLidar sdk frome them https://github.com/YDLIDAR/YDLidar-SDK  
  in YLidar folder:
-> mkdir build   
-
-> cmake ..
- 
-> make -j 
-
-> sudo make install 
-
+```
+mkdir build   
+cmake ..
+make -j 
+sudo make install 
+```
 In PCL_Lidarvisualization root CMakeLists.txt **set(UseLidarInstall ON)**
 In PCL_Lidarvisualization root folder:
-> mkdir build 
-
-> cmake ..
-
-> make -j 
-
+```
+mkdir build 
+cmake ..
+make -j 
+```
 **Option 2:**
 Use prebuilt static library (was built with Ubuntu 20.04)
 In PCL_Lidarvisualization CMakeLists.txt set "UseLidarInstall off"
-> mkdir build 
-
-> cmake ..
- 
-> make -j 
-
-> sudo make install 
-
+```
+mkdir build 
+cmake ..
+make -j 
+sudo make install 
+```
 **Starting the Lidar**
  Go to PCL_Lidarvisualization build folder and execute with root-privilegs (thats mandatory):
-> sudo ./LidarVisu 
-
+```
+sudo ./LidarVisu 
+```
 > Baudrate: 128000
 
 > one-way communication: no
